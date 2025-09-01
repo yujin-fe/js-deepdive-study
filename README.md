@@ -69,17 +69,26 @@ PR을 `Squash and Merge`할 때 최종 커밋 메시지는 다음 규칙을 따�
 1. 저장소 클론
     ```bash
     git clone https://github.com/yujin-fe/js-deepdive-study.git
-    cd js-deepdive-study```
+    cd js-deepdive-study
+    ```
 2. `fetch` 후 주차별 브랜치로 이동, 주차별 디렉토리로 이동
     ```bash
     git fetch origin
-    git checkout sep-1st
-    cd sep-1st```
-       
+    ```
+    1) 클론할 당시 없던 브랜치에 접근하려면 
+        ```
+        git checkout -b sep-1st origin/sep-1st
+        cd sep-1st
+        ```
+    2) 클론할 때 있던 브랜치라면(git branch에서 확인 가능)
+        ```
+        git checkout sep-1st
+        cd sep-1st
+        ```
 3. 주차별 브랜치 안에서 본인이름 브랜치 생성, 주차별 디렉토리 안에서 본인이름 디렉토리 생성
     ```bash
     git checkout -b yujin
-    mkdir yujin
+    mkdir yujin (yujin 폴더가 sep-1st 내부에 있어야함.)
     cd yujin```
 4. 작업 후 푸쉬(본인이름 브랜치로), PR(주차별 브랜치로) 올리기
     ```bash
