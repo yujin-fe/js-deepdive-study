@@ -59,10 +59,10 @@ main
 ```css
 js-deep-dive
  └─ sep
-         └─ sep-1st
-                    └─ yujin
-                          └─발표자료.md
-                          └─...      
+       └─ sep-1st
+                  └─ yujin
+                        └─발표자료.md
+                        └─...      
  ┗ README.md
  ```
 
