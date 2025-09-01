@@ -89,15 +89,18 @@ PR을 `Squash and Merge`할 때 최종 커밋 메시지는 다음 규칙을 따�
     ```bash
     git checkout -b yujin
     mkdir yujin (yujin 폴더가 sep-1st 내부에 있어야함.)
-    cd yujin```
+    cd yujin
+    ```
 4. 작업 후 푸쉬(본인이름 브랜치로), PR(주차별 브랜치로) 올리기
     ```bash
     git add [파일이름] or .
     git commit -m "[sep-1st]유진-학습 정리"
-    git push -u origin yujin (최초 푸쉬시 왼쪽처럼 이후부터는 그냥 git push)```
+    git push -u origin yujin (최초 푸쉬시 왼쪽처럼 이후부터는 그냥 git push)
+    ```
 5. PR 요청   
   Base:주차별 브랜치(예:sep-1st)  
   Compare: 본인 브랜치(예:yujin)
 6. 주차별 브랜치에서 월별 브랜치로 머지하면 본인이름 브랜치 삭제하기
     ```bash
-      git branch -D yujin```
+      git branch -D yujin
+    ```
