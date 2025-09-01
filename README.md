@@ -4,7 +4,7 @@
 ## 🪾 브랜치 생성 전략
 1. 각 주차별 브랜치를 생성한다.
 2. 이번주 브랜치에서 각자 본인이름 브랜치를 생성하고 본인이름으로 디렉토리 만들어서 작업한다.   
-  예)`sep-1st`브랜치에서 `yujin`브랜치 생성 `yujin` 폴더에서 작업
+  예)`sep-1st`브랜치에서 `yujin`브랜치 생성 `/js-deepdive-study/sep/sep-1st/yujin` 폴더에서 작업
 3. 작업 내용을 이번주 브랜치에 피알하면 서로 확인하고 이번주 브랜치에 머지(squash and merge)한다.
 4. 위 과정을 4주 반복하고 마지막주 머지까지 완료했으면 첫째주부터 마지막주까지의 브랜치를 이번달 브랜치에 squash and merge한다.
 5. 9월 브랜치에 머지한 후에는 9월의 1주~4주차 브랜치는 삭제한다.
@@ -78,12 +78,12 @@ PR을 `Squash and Merge`할 때 최종 커밋 메시지는 다음 규칙을 따�
     1) 클론할 당시 없던 브랜치에 접근하려면 
         ```
         git checkout -b sep-1st origin/sep-1st
-        cd sep-1st
+        cd sep/sep-1st
         ```
     2) 클론할 때 있던 브랜치라면(git branch에서 확인 가능)
         ```
         git checkout sep-1st
-        cd sep-1st
+        cd sep/sep-1st
         ```
 3. 주차별 브랜치 안에서 본인이름 브랜치 생성, 주차별 디렉토리 안에서 본인이름 디렉토리 생성
     ```bash
