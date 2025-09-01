@@ -85,7 +85,7 @@ PR을 `Squash and Merge`할 때 최종 커밋 메시지는 다음 규칙을 따�
     ```bash
     git add [파일이름] or .
     git commit -m "[sep-1st]유진-학습 정리"
-    git push --set-upstream origin yujin (최초 푸쉬시)```
+    git push -u origin yujin (최초 푸쉬시 왼쪽처럼 이후부터는 그냥 git push)```
 5. PR 요청   
   Base:주차별 브랜치(예:sep-1st)  
   Compare: 본인 브랜치(예:yujin)
