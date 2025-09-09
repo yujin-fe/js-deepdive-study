@@ -161,6 +161,62 @@ for(let i = 1; i<=6; i++){
 없으면 [[Prototype]]을 따라 올라가며 찾음 → 이 과정을 **프로토타입 체인(prototype chain)**이라고 함
 
 
+## 1. 프로토타입(Prototype)란?
+
++ 자바스크립트 객체는 다른 객체를 상속할 수 있음
++ 상속 대상이 되는 객체를 프로토타입 객체라고 함
++ 모든 객체는 내부적으로 [[Prototype]] 링크를 가지고 있음
+
+```
+const obj = { name: "codeit" };
+console.log(obj.__proto__); // Object.prototype
+```
+
+## 2. 프로토타입 체인(Prototype Chain) 여기가 발표자료
+
++ 객체에서 속성을 찾을 때,
+
+  1. 객체 자신에 속성이 있는지 확인
+  2. 없으면 [[Prototype]]을 따라가며 검색
+  3. Object.prototype까지 없으면 undefined
+
+
+```
+  function Person(name) {
+  this.name = name;
+}
+Person.prototype.sayHello = function() {
+  console.log(`안녕, 나는 ${this.name}`);
+};
+
+const p1 = new Person("기훈");
+p1.sayHello(); // Person.prototype에 있는 메서드 호출
+```
+
+4. Prototype과 Class
+
++ ES6 이후: class 문법 도입
+
+```
+class Person {
+  constructor(name) { this.name = name; }
+  sayHello() { console.log(`안녕, 나는 ${this.name}`); }
+}
+```
+
+5. 핵심 정리
+
+   1. JS는 프로토타입 기반 객체지향 언어
+
+   2. 모든 객체는 [[Prototype]] 링크를 가지고 있음
+
+   3. 객체에서 속성/메서드를 찾을 때 프로토타입 체인을 따라 검색
+
+   4. 메서드 공유로 메모리 효율적
+
+   5. ES6 class는 문법적 설탕, 내부는 프로토타입
+
+
 ### 프로퍼티 접근법
 
 + .(점) 표기법 
