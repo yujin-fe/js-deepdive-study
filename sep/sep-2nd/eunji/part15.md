@@ -1,12 +1,10 @@
 # 15장 let, const 키워드와 블록 레벨 스코프
 > JavaScript에서 변수를 선언하는 `var`, `let`, `const` 키워드의 특징과 차이점을 다룹니다. 특히, ES6에서 도입된 `let`과 `const`가 기존 `var` 키워드의 문제점을 어떻게 해결하는지에 초점을 맞춥니다.
-
 ### 🎯 QUIZ TIME
 문제 1
 ```
 javascriptconsole.log(x); // ?
 var x = 5;
-
 console.log(y); // ?
 let y = 10;
 ```
@@ -60,17 +58,13 @@ window.const변수  // ❌ undefined
 ### 🎯 QUIZ TIME 
 ```
 var a = 1;
-let b = 2; 
+let b = 2; 
 const c = { value: 3 };
-
 console.log(window.a); // ?
 console.log(window.b); // ?
 console.log(window.c); // ?
-
 c.value = 30;
-
 console.log(c.value); // ?
-
 c = { value: 300 }; // ?
 ```
 > 1,
