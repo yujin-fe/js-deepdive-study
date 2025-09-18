@@ -6,7 +6,7 @@
 기본으로 `constructor` 프로퍼티를 가지고 있고, 값으로 자기 자신을 가르킨다.
 
 ```js
-let a = {};
+function a() {};
 console.log(a.prototype); //{}; 열어보면 constructor라는 프로퍼티를 가지고 있다.
 ```
 
